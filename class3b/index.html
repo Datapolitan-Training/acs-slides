@@ -142,6 +142,12 @@ class:center,middle
 
 ---
 
+class:center,middle
+# Pop Quiz
+# Find the number of 311 Service Requests in each Community District in NYC
+
+---
+
 # What Do You Remember About Functions in Excel?
 --
 
@@ -199,8 +205,104 @@ class:center,middle
 
 ---
 
-# Remember this?
-![img-center-55](../images/311_problem.jpg)
+# VLOOKUP
+--
+
++ Useful for referencing data from another sheet (reference tables)
+--
+
++ Basic Syntax
+```
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+```
+
+--
+
++ Example
+```
+=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
+```
+---
+
+class:center,middle
+# We're Going to Join the Population Data with the 311 Service Requests
+
+---
+
+# Adding the VLOOKUP
++ We need to lookup the population based on the Community Board and Borough
+
+```
+=VLOOKUP(A5,'[NYC_Population_1970-2010_formatted.xlsx]A'!$A$2:$G$60,7,FALSE)
+```
+
+--
+
++ Use the value in cell A5
+--
+
++ Go to Workbook `NYC_Population_1970-2010_formatted.xlsx`, Sheet `A`
+--
+
++ Match the value from cell A5 in Column A, Rows 2 - 60
+--
+
++ Return the value in column 7 (G)
+--
+
++ Don't do any fuzzy matching (exact match)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](../images/vlookup1.png)
+
+---
+
+# Adding the VLOOKUP
+
+![img-center-90](../images/vlookup2.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](../images/calc_complaints1.png)
+
+---
+
+# Calculating the Complaints per 1000 People
+
+![img-center-90](../images/calc_complaints2.png)
+
+---
+
+# Conditional Formatting
+![img-center-65](../images/cf1.png)
+
+---
+
+# Conditional Formatting
+![img-center-80](../images/cf_311_pop.png)
+
+---
+
+class:center, middle
+# Any Questions?
+
+---
+
+# Open Lab
+--
+
++ Work on your data analysis
+--
+
++ Work on your research
+--
+
++ We're here to help
 
 ---
 
@@ -214,100 +316,55 @@ class:center,middle
 
 ---
 
-name:gallery
-# Gallery of Possibilities
---
-
-+ [Living Lots (formerly 596 Acres)](https://livinglotsnyc.org/#11/40.7300/-73.9900)
---
-
-+ [OpenSewer Atlas](http://openseweratlas.tumblr.com/map)
---
-
-+ [Capital Planning Platform](https://capitalplanning.nyc.gov/facilities)
---
-
-+ [NYC DCP Community District Portals](https://communityprofiles.planning.nyc.gov/)
---
-
-+ [Twitter NYC: A Multilingual City](http://ny.spatial.ly/)
---
-
-+ [MTA Subway Station Status Interactive Map](http://www.datapolitan.com/mta_station_repair_status/)
-
----
-
-# Project Summaries
---
-
-+ [Download the template here](STEP_Summary_Report_Sample_29Jan2017.docx)
---
-
-+ Fill in your project name
---
-
-+ Fill in the project participants
---
-
-+ Look over the other sections to get a feel for what's you'll be working on later
-
----
-
-# General Population Research
-+ Who do you serve?<br>
---
-Check the Data page on the [NYC Data Leaders website](http://www.nycstep.org/)
---
-
-+ What do these communities look like?<br>
---
-Check out [the Bytes of the Big Apple page](https://www1.nyc.gov/site/planning/data-maps/nyc-population.page)
---
-
-+ Look for any other resources you might need to tell the story of your communities
---
-
-+ We'll be around to help
----
-
-# Presentations
-+ Quickly describe what you found
-+ Let us know what data you still need to collect
-
----
-exclude:true
-
-+ Briefly address what the data says about their needs
-+ Briefly describe how you see your project fitting within these needs
-
-+ Use whatever means you want to tell this story
-
----
-
-# Task Organization
-+ What needs to be done?
-+ Who's doing it?
-
-
----
-exclude: true
 # Open Lab
-+ Answer survey questions (try to get above 70%)
-+ Explore [the NYC STEP website](http://www.nycstep.org/)
-+ Continue your research and analysis
-+ If you know you need to request data, let's get those requests started
+--
+
++ Continue working on gathering your research
+--
+
++ Look over the resources on the [NYC STEP website](http://www.nycstep.org/digdeeper)
+--
+
++ Also look at the [University of Michigan Library Staying Informed for Social Work Practice Guide](http://guides.lib.umich.edu/c.php?g=283012&p=1885683)
+--
+
++ If you find an article you want but can't access, fill out this [Research Request Form](https://docs.google.com/forms/d/e/1FAIpQLSey82QvC9ECAWmBZ03sEsrmJ8uwstCbjHNqYJ_dnTi54ztbQg/viewform?usp=sf_link)
+--
+
++ Submit your questions to [the Planning Questions to the Google Form](https://docs.google.com/forms/d/e/1FAIpQLScVGdws98j-dmfhBCY64-xbhnsaXwCnxVvf04-UDOttP0Vf1g/viewform?usp=sf_link)
+--
+
++ [Leave comments on this session (yesterday and today)](http://www.nycstep.org/step3-comments-nyc2)
 
 ---
-exclude:true
-# Reminder
-+ Have data and research for our next session
-+ Feel free to reach out if you have any questions
+
+# Checkout
++ What have you done?
++ What are you doing?
++ What still needs to be done?
 
 ---
 
-exclude:true
-# Resources
-+ [John Oliver on Scientific Studies](https://youtu.be/0Rnq1NpHdmw) (don't watch at work or around children)
+# For the Next Session
+--
+
++ Continue your data analysis (if necessary)
+--
+
++ Continue gathering research
+--
+
++ Refine your hypothesis
+--
+
++ Be ready to put your work into a Logic Model when we get back in January
+
+---
+
+# And...
+![img-center-90](../images/new_year.jpg)
+
+.caption[[Image](https://www.flickr.com/photos/amodiovalerioverde/341332497/) by [Amodiovalerio Verde](https://www.flickr.com/photos/amodiovalerioverde/), [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)]
 
 ---
 
