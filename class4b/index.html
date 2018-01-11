@@ -55,8 +55,7 @@ class: middle
 ![img-center-100](../images/sunset.jpg)
 
 ???
-+ Sensation awareness 
-+ _Sadhana_ exercise #2
++ Ujjayi breath
 
 ---
 
@@ -66,10 +65,7 @@ class: middle
 + Check-In
 --
 
-+ Data exercise (joining 311 data with population data)
---
-
-+ Open Lab (Data Analysis)
++ Logic Models (continued)
 --
 
 + Lunch
@@ -77,7 +73,7 @@ class: middle
 
 + Open Lab (Research Questions)/Team Check-ins
 ???
-+ Filling in the Planning Questions through a Google Form
++ Filling in the Logic Model through a Google Form
 --
 
 + Check-out
@@ -86,214 +82,132 @@ class: middle
 
 ---
 
-class:center,middle
-# How are you doing?
+# A Quick Review
++ **Hypothesis** is a clear statement of what will result with the change in practice
++ **Purpose** is the larger issue, challenge, or question of your innovation (the "so what")
++ **Inputs and Partners** are the resources for your innovation
++ **Activities** are the specific steps/actions that move your innovation forward
++ **Evaluation Measures** are the key indicators for your project
++ **Outcomes** are what you expect will happen as a result of your activities
+
+---
+
+# Hypothesis
+--
+
++ A clear statement of what will result with the change in practice
+--
+
++ The hypothesis frames the entire innovation or initiative
+
+---
+
+# Outcomes
+--
+
++ What you expect will happen as a result of your activities
+--
+
++ (Don't worry about short-term, intermediate, or long-term)
+
+---
+
+# Purpose
+--
+
++ Relates the hypothesis to the broader context
+--
+
++ Fits the project into larger issues, challenges, or questions
+--
+
++ Example<br><br>_Higher rates of parent engagement will improve outcomes for families_
+
+---
+
+# Goals
+--
+
++ Specific elements that make up the general purpose
+--
+
++ Logic model goals can be targets but do not have to be specific and measurable
+--
+
++ They can also be items thought to contribute to the problem you are addressing in your purpose statement
+--
+
++ Examples
+--
+<br>_Increase parent engagement rate by 20%_
+--
+<br>_Increase parent satisfaction with referral services_
+
+---
+
+# Evaluation Measures 
+--
+
++ The key indicators to evaluate your project
+--
+
++ Tell the story of your project and the impact you had
+--
+
++ Should be quantifiable in some way
+
+
+---
+
+# Inputs and Partners
+--
+
++ All the things (and people) related to both the problem and the (potential) solution
+--
+
++ Inputs are resources for your innovation
+--
+
++ Some Examples
+--
+<br>_Program Data_
+--
+<br>_Colleagues_
+--
+<br>_Clients_
+--
+<br>_Community Partners_
+--
+<br>_STEP Coaches_
+
+---
+
+# Activities
+--
+
++ The specific steps/actions that move your innovation forward
+--
+
++ Should be performed by, about, with, or "to" the inputs
+--
+
++ Each input should be linked to at least one activity
 
 ---
 
 class:center,middle
-# Let's Get Into Some Data
-## [Click to download the Population data](../data/NYC_Population_1970-2010_formatted.xlsx)
-## [Click to download the 311 data](../data/20170901_20171005_311Noise.xlsx)
-
----
-
-# What's a PivotTable?
---
-
-+ A data summarization tool
---
-
-+ Useful to quickly understand data
---
-
-+ Can use to graph data totals
---
-
-
-
-![img-center-100](../images/pt1.png)
-
----
-
-# Creating a PivotTable
-![img-center-60](../images/pt2.png)
---
-
-+ Should default to all your data .red[unless you have any cells selected]
---
-
-+ Should default to a new worksheet
-
----
-
-# Creating a PivotTable
-![img-right-35](../images/pt3_rev.png)
-## Drag and drop fields to visualize
-+ Row labels 
-+ Values
-+ Filter
-+ Column Labels
-
----
-
-# Creating a PivotTable
-![img-center-100](../images/pt4.png)
+# Lunch
 
 ---
 
 class:center,middle
-# Pop Quiz
-# Find the number of 311 Service Requests in each Community District in NYC
-
----
-
-# What Do You Remember About Functions in Excel?
---
-
-+ Allow you to do calculations in Excel
---
-
-+ Also allow you to manipulate text
---
-
-+ And a whole lot more...
-
----
-
-# Some Categories of Functions in Excel
---
-
-+ Database functions
---
-
-+ Date and time functions
---
-
-+ Financial functions
---
-
-+ Logical functions
---
-
-+ Lookup and reference functions
---
-
-+ Math and trigonometry functions
---
-
-+ Statistical functions
---
-
-+ Text functions
---
-
-+ 13 categories in total
-
----
-
-# How Have We Used Functions?
---
-
-+ To calculate numbers (sum of population)
---
-
-+ To extract data (Hours from the time a 311 Service Request was created)
---
-
-+ How else have you used a formula?
-
----
-
-# VLOOKUP
---
-
-+ Useful for referencing data from another sheet (reference tables)
---
-
-+ Basic Syntax
-```
-=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
-```
-
---
-
-+ Example
-```
-=VLOOKUP(A2,SHEET2$A1:$D500,4,FALSE)
-```
----
-
-class:center,middle
-# We're Going to Join the Population Data with the 311 Service Requests
-
----
-
-# Adding the VLOOKUP
-+ We need to lookup the population based on the Community Board and Borough
-
-```
-=VLOOKUP(A5,'[NYC_Population_1970-2010_formatted.xlsx]A'!$A$2:$G$60,7,FALSE)
-```
-
---
-
-+ Use the value in cell A5
---
-
-+ Go to Workbook `NYC_Population_1970-2010_formatted.xlsx`, Sheet `A`
---
-
-+ Match the value from cell A5 in Column A, Rows 2 - 60
---
-
-+ Return the value in column 7 (G)
---
-
-+ Don't do any fuzzy matching (exact match)
-
----
-
-# Adding the VLOOKUP
-
-![img-center-90](../images/vlookup1.png)
-
----
-
-# Adding the VLOOKUP
-
-![img-center-90](../images/vlookup2.png)
-
----
-
-# Calculating the Complaints per 1000 People
-
-![img-center-90](../images/calc_complaints1.png)
-
----
-
-# Calculating the Complaints per 1000 People
-
-![img-center-90](../images/calc_complaints2.png)
-
----
-
-# Conditional Formatting
-![img-center-65](../images/cf1.png)
-
----
-
-# Conditional Formatting
-![img-center-80](../images/cf_311_pop.png)
-
----
-
-class:center, middle
-# Any Questions?
+# Welcome Back
 
 ---
 
 # Open Lab
+
++ Finish up your Logic Models and [submit them](https://docs.google.com/forms/d/e/1FAIpQLSfZcOSq2nEjOLEgC3V2KndXyCbxofqQoweqnS5ZKZxu9QjPSg/viewform?usp=sf_link)
 --
 
 + Work on your data analysis
@@ -309,56 +223,9 @@ class:center, middle
 --
 
 + We're here to help
-
----
-
-class:center,middle
-# Lunch
-
----
-
-class:center,middle
-# Welcome Back
-
----
-
-# A Quick Note on Research
 --
 
-+ <a href="https://doaj.org/" target="_blank">Click this link</a>
---
-
-+ Notice the difference between typing `foster care` and `"foster care"` 
---
-<br> .blue[(563 results vs 97)]
---
-
-+ Why is that?
---
-
-+ What other search tips do you have?
-
----
-
-# Open Lab
---
-
-+ Continue working on gathering your research
---
-
-+ Look over the resources on the [NYC STEP website](http://www.nycstep.org/digdeeper)
---
-
-+ Also look at the [University of Michigan Library Staying Informed for Social Work Practice Guide](http://guides.lib.umich.edu/c.php?g=283012&p=1885683)
---
-
-+ If you find an article you want but can't access, fill out this [Research Request Form](https://docs.google.com/forms/d/e/1FAIpQLSey82QvC9ECAWmBZ03sEsrmJ8uwstCbjHNqYJ_dnTi54ztbQg/viewform?usp=sf_link)
---
-
-+ Submit your questions to [the Planning Questions to the Google Form](https://docs.google.com/forms/d/e/1FAIpQLScVGdws98j-dmfhBCY64-xbhnsaXwCnxVvf04-UDOttP0Vf1g/viewform?usp=sf_link)
---
-
-+ [Leave comments on this session (yesterday and today)](http://www.nycstep.org/step3-comments-nyc2)
++ [Leave comments on this session (yesterday and today)](https://www.nycstep.org/step4-comments-nyc2)
 
 ---
 
@@ -372,23 +239,20 @@ class:center,middle
 # For the Next Session
 --
 
-+ Continue your data analysis (if necessary)
++ Continue your data analysis
 --
 
 + Continue gathering research
 --
 
-+ Refine your hypothesis
---
-
-+ Be ready to put your work into a Logic Model when we get back in January
++ Be ready to refine your Logic Models
 
 ---
 
 # And...
-![img-center-90](../images/new_year.jpg)
+![img-center-90](../images/applause.gif)
 
-.caption[[Image](https://www.flickr.com/photos/amodiovalerioverde/341332497/) by [Amodiovalerio Verde](https://www.flickr.com/photos/amodiovalerioverde/), [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)]
+.caption[[Source](https://imgur.com/gallery/NY5OPT1)]
 
 ---
 
@@ -400,8 +264,8 @@ class:center,middle
 
 ---
 
-class:center, middle
-#THANK YOU!
+class:middle,center
+# THANK YOU!
 
 
     </textarea>
