@@ -219,6 +219,40 @@ class:center,middle
 + Manage
 + “Go…”
 
+---
+
+# Installing Data Analysis ToolPak
+![img-center-50](../images/analysis_toolpak2.png)
+
+---
+
+# Setup Your Bins
+![img-right-20](../images/bins.png)
++ Use an empty column and label it “Bins”
++ Start with the max of the first bin
++ Create an entry for each bin you want
++ Use a formula to save time
+
+---
+
+# Creating a Histogram
+## .center[Under the Data Ribbon]
+![img-center-65](../images/analysis_toolpak3.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist1.png)
+
+---
+
+# Creating a Histogram
+![img-center-60](../images/create_hist2.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist3.png)
 
 ---
 
@@ -275,13 +309,12 @@ class:center,middle
 + Calculated by subtracting the minimum from the maximum
 --
 
-```python
-df["height (inches)"].max() - df["height (inches)"].min()
-```
++ Use the `MAX` and `MIN` functions in Excel
 
 ---
 
 # Quantiles
+![img-right-50](../images/iqr.png)
 --
 
 + Median splits the data set into two equal groups
@@ -302,11 +335,7 @@ df["height (inches)"].max() - df["height (inches)"].min()
 + Fourth quartile is 75-100% of the data
 --
 
-```python
-df.quantile(q=0.25) #1st Quartile
-df.quantile(q=0.5) #2nd Quartile (Median)
-df.quantile(q=0.75) #3rd Quartile
-```
++ Use the `QUARTILE` function in Excel
 ---
 
 # Interquartile Range
@@ -317,13 +346,11 @@ df.quantile(q=0.75) #3rd Quartile
 
 ![img-center-65](../images/iqr.png)
 
-```python
-df['height (inches)'].quantile(q=0.75) - df['height (inches)'].quantile(q=0.25)
-```
 
 ---
 
 # Outliers
+![img-right-35](../images/outlier.png)
 --
 
 + Any data points less than 1.5x the IQR or greater than 1.5x the IQR are considered outliers
@@ -333,12 +360,16 @@ df['height (inches)'].quantile(q=0.75) - df['height (inches)'].quantile(q=0.25)
 --
 
 + Focus on the “meat” of the data
+--
+
+
+# &nbsp;
+.caption[http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/ ]
 
 ---
 
-# Outliers
-![img-center-35](../images/outlier.png)
-http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/ 
+class:center,middle
+# Do We Have Any Outliers in Our Data?
 
 ---
 
@@ -357,43 +388,6 @@ http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/
 
 # Standard Deviation
 ![img-center-100](../images/std_breakdown.png)
-
----
-
-# Calculating Standard Deviation
---
-
-+ Subtract the mean from each data point
---
-
-+ Square the result
---
-
-+ Sum them together
---
-
-+ Divide by the number of instances (minus 1)
---
-
-+ Take the square root
-
----
-
-# Calculating Standard Deviation
-[![img-center-45](https://thekubicle.com/assets/lesson_images/stdev.gif)](https://thekubicle.com/lessons/variance-and-standard-deviation)
---
-
-### or
---
-
-```python
-df.std()
-```
-```
-height (inches)                 3.239595
-age (years)                     7.676495
-siblings (not including you)    1.057850
-```
 
 ---
 
@@ -460,6 +454,54 @@ class:center,middle
 ---
 
 # Survey Writing 101
+--
+
++ Use clear, concise language
+--
+
++ Less is more
+--
+
++ Test your wording
+--
+
++ Pay attention to flow
+--
+
++ Stay balanced
+--
+
++ Be aware of quantitative vs qualitative questions and the limitations of both
+
+---
+
+# 3 Parts of a Survey Question
+--
+
++ The question being asked
+--
+
++ Additional instructions
+--
+
++ The response options
+
+---
+
+# Let's Build a Survey
+![img-right-45](../images/coffee_process.jpg)
+--
+
++ We want to survey staff satisfaction with our coffee
+--
+
++ What questions do we want to ask?
+--
+
++ How do we want to ask them?
+--
+
++ Let's build it together
 
 ---
 
