@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NYC ACS Data Leaders</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../slide.css"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout:true
+
+<div class="header" style="display:block; text-align: left; color:gray; font-size:1em; position: fixed; top: 0px; left: 0px; height: 30px;vertical-align:middle;margin:7px 0 0 0;width:100%;background: #fcfcfc;
+background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%); 
+background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);
+background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <img src="../images/dataleaders_small.png" style="position: fixed;top: 2px; left: 5px; width: 14%;">
+  <p style="display:block;text-align:left;color:gray;font-size:1em; position: fixed; top: 0px; left: 155px; height: 30px;vertical-align:middle;margin:7px 0 0 0; ">Session 6B - Inform Action Using Data</p>
+</div>
+<div class="footer" style="display:block;color:gray;position:fixed;bottom: 0px;left:0px;height:30px;vertical-align:middle;margin:0 0 0 0;width:100%;background: #fcfcfc;background: -moz-linear-gradient(top, #fcfcfc 0%, #d1d1d1 100%);background: -webkit-linear-gradient(top, #fcfcfc 0%,#d1d1d1 100%);background: linear-gradient(to bottom, #fcfcfc 0%,#d1d1d1 100%);sfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#d1d1d1',GradientType=0 );">
+  <p class="footer">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NYC ACS Data Leaders</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+  </p>
+</div>
+
+<!-- <p class="footer">
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NYC ACS Data Leaders</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+</p>
+ -->
+--
+
+class:center, middle
+![img-center-40](../images/dataleaders_large.jpg)
+
+# Data Leaders - Session 6B
+## Inform Action Using Data
+
+- - -
+
+### Facilitators: Richard Dunks, Loren Ganoe, and Markus Kessler
+
+### Follow along at: http://bit.ly/dataleaders-5b
+![img-center-60](../images/ss_dp.png)
+
+
+---
+
+class:center,middle
+# Welcome
+
+---
+
+class: middle
+![img-center-100](../images/sunset.jpg)
+
+???
++ Basic sensation
+
+---
+
+class:center,middle
+# Reflection on Breathing Exercises
+
+---
+
+# Agenda for Today
+--
+
++ Check-in
+--
+
++ Open Lab
+--
+
++ Lunch
+--
+
++ Project Presentation teaser (quick demo of a presentation from past STEP)
+--
+
++ Open Lab/Submit Project Summaries
+--
+
++ Check-out
+---
+
+class:center,middle
+# How are you doing?
+
+---
+
+# Our Ground Rules
+![img-right-40](../images/GroundRuleFinal_crop.jpg)
+--
+
++ Keep it professional, never personal
+--
+
++ Actively listen and pay attention to others
+--
+
++ Be respectful in speech and body language
+--
+
++ Be constructive and helpful in your criticism
+--
+&nbsp;
+## .center[Assume positive regard and noble intent]
+
+---
+
+class:center,middle
+# Statistics Primer
+
+---
+class:center,middle
+> We are drowning in information and starving for knowledge.
+
+## Rutherford D. Roger
+
+---
+
+# Why Statistics?
+--
+
++ Tools for extracting meaning from data
+--
+
++ Commonly understood ways of communicating meaning to others
+
+---
+
+# Some Data Collection
++ Number of Siblings (not including yourself)
++ Years of service to NYC
++ Height (in inches)
+
+---
+
+# Mean
+--
+
++ A representative value for the data
+--
+
++ Usually what people mean by “average”
+--
+
++ Calculate by adding all the values together and dividing by the number instances
+--
+
++ Sensitive to extremes
+
+---
+
+# Median
+--
+
++ The “middle” value of a data set
+--
+
++ Center value of a data set with an odd number of values
+--
+
++ Sum of two middle values divided by 2 if the number of items in a data set is even
+--
+
++ Resistant to extreme values
+--
+
+![img-center-100](../images/median_balance.png)
+
+---
+
+# Median vs Mean
+![img-center-100](../images/mean_vs_median.png)
+
+---
+
+# Mode
+![img-right-50](../images/mode.png)
+--
+
++ The most frequent value in a dataset
+--
+
++ Often used for categorical data
+
+---
+
+# Histogram
+--
+
+![img-right-45](../images/hist2.png)
++ Charts the frequency of instances in the data
+--
+
++ Shows the frequency distribution
+--
+
++ Values are grouped into class intervals
+--
+
+![img-right-45](../images/hist1.png)
++ Best to have a consistent size to class intervals
+--
+
+
+&nbsp;<br>
+&nbsp;<br>
+.caption[http://mathematica.stackexchange.com/questions/59520/histogram-with-variable-bin-size]
+
+---
+
+class:center,middle
+# Creating a Histogram in Excel
+
+---
+
+# Installing Data Analysis ToolPak
+![img-right-75](../images/analysis_toolpak1.png)
++ File
++ Options
++ Add-ins
++ Manage
++ “Go…”
+
+---
+
+# Installing Data Analysis ToolPak
+![img-center-50](../images/analysis_toolpak2.png)
+
+---
+
+# Setup Your Bins
+![img-right-20](../images/bins.png)
++ Use an empty column and label it “Bins”
++ Start with the max of the first bin
++ Create an entry for each bin you want
++ Use a formula to save time
+
+---
+
+# Creating a Histogram
+## .center[Under the Data Ribbon]
+![img-center-65](../images/analysis_toolpak3.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist1.png)
+
+---
+
+# Creating a Histogram
+![img-center-60](../images/create_hist2.png)
+
+---
+
+# Creating a Histogram
+![img-center-100](../images/create_hist3.png)
+
+---
+
+class:center,middle
+# Distributions of Data
+
+---
+
+# Normal(-ish) Distribution
+![img-center-90](../images/dist_normal_rev.png)
+
+---
+
+# Long-tail Distribution
+![img-center-95](../images/dist_lt_rev.png)
+
+---
+
+# Bi-Modal Distribution
+![img-center-100](../images/dist_bm_rev.png)
+
+---
+
+# Measures of Central Tendency
+--
+
++ Quantitative data tends to cluster around some central value
+--
+
++ Contrasts with the spread of data around that center (i.e. the variability in the data)
+--
+
++ Mean is a more precise measure and more often used
+--
+
++ Median is better when there are extreme outliers
+--
+
++ Mode is used when the data is categorical (as opposed to numeric)
+
+---
+
+class:center,middle
+# Measuring Variability
+
+---
+
+# Range
+--
+
++ The gap between the minimum value and the maximum value
+--
+
++ Calculated by subtracting the minimum from the maximum
+--
+
++ Use the `MAX` and `MIN` functions in Excel
+
+---
+
+# Quantiles
+![img-right-50](../images/iqr.png)
+--
+
++ Median splits the data set into two equal groups
+--
+
++ Quartiles split the data into four equal groups
+--
+
++ First quartile is 0-25% of the data
+--
+
++ Second quartile is 25-50% of the data
+--
+
++ Third quartile is 50-75% of the data
+--
+
++ Fourth quartile is 75-100% of the data
+--
+
++ Use the `QUARTILE` function in Excel
+---
+
+# Interquartile Range
+--
+
++ “Middle” 50% of data (between 1st Quartile and 3rd Quartile)
+--
+
+![img-center-65](../images/iqr.png)
+
+
+---
+
+# Outliers
+![img-right-35](../images/outlier.png)
+--
+
++ Any data points less than 1.5x the IQR or greater than 1.5x the IQR are considered outliers
+--
+
++ Helps identify data points that may skew the analysis
+--
+
++ Focus on the “meat” of the data
+--
+
+
+# &nbsp;
+.caption[http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/ ]
+
+---
+
+class:center,middle
+# Do We Have Any Outliers in Our Data?
+
+---
+
+# Standard Deviation
+--
+
++ The average distance of each data point from the mean
+--
+
++ Larger the standard deviation, the greater the spread
+--
+
+![img-center-100](../images/std1.png)
+
+---
+
+# Standard Deviation
+![img-center-100](../images/std_breakdown.png)
+
+---
+
+# Measures of Variability
+--
+
++ Describe the distribution of our data
+--
+
++ Range (Maximum – Minimum)
+--
+
++ Inter-quartile Range
+--
+
++ Standard Deviation
+--
+
++ Identification of outliers (1.5 x IQR)
+
+---
+
+# Descriptive Statistics
+--
+
++ Quantitatively describe the main features of a dataset
+--
+
++ Help distinguish distributions and make them comparable
+
+---
+
+# Exploratory Data Analysis
+--
+
++ Goal -> Discover patterns in the data
+--
+
++ Understand the context
+--
+
++ Summarize fields
+--
+
++ Use graphical representations of the data
+--
+
++ Explore outliers
+
+--
+
+### Tukey, J.W. (1977). Exploratory data analysis. Reading, MA: Addison-Wesley.
+
+---
+
+class:center,middle
+# Let's Try That Again
+## [Vehicle Collisions in NYC](http://www.datapolitan.com/Data_Analytics_Classes/class_materials/data/20160401_0630_NYPD_Motor_Vehicle_Collisions.xlsx)
+
+---
+
+class:center,middle
+# Open Lab
+
+---
+
+class:center,middle
+# Lunch
+
+---
+
+class:center,middle
+# Welcome Back
+
+---
+
+# Survey Writing 101
+--
+
++ Use clear, concise language
+--
+
++ Less is more
+--
+
++ Test your wording
+--
+
++ Pay attention to flow
+--
+
++ Stay balanced
+--
+
++ Be aware of quantitative vs qualitative questions and the limitations of both
+
+---
+
+# 3 Parts of a Survey Question
+--
+
+1. The question being asked
+--
+
+2. Any additional instructions
+--
+
+3. The response options
+--
+
+
+## These should be clear for the person taking the survey
+
+---
+
+# Let's Build a Survey
+![img-right-45](../images/coffee_process.jpg)
+--
+
++ We want to survey staff satisfaction with our coffee
+--
+
++ What questions do we want to ask?
+--
+
++ How do we want to ask them?
+--
+
++ Let's build it together
+
+---
+
+# [Survey Monkey](https://www.surveymonkey.com)
+--
+
++ Allows you to build surveys for free
+--
+
++ Limited to 10 questions and 100 responses
+--
+
++ Lots of features and question types:
+--
+
+
+![img-center-65](../images/surveymonkey_types.png)
+
+---
+
+# Open Lab
+--
+
++ Revise your Logic Models (if necessary)
+--
+
++ Come up with assessment questions (if part of your project) and feel free to send them to us for review
+--
+
++ Answer the [Survey Questions](https://www.nycstep.org/step5-quiz)
+--
+
++ [Leave comments on this session](https://www.nycstep.org/step5-comments-nyc2)
+
+---
+
+# Checkout
++ What have you done?
++ What are you doing?
++ What still needs to be done?
+
+---
+
+# For the Next Session
+--
+
++ Continue working on your logic models
+--
+
++ Continue gathering data and research (if necessary)
+--
+
++ Reach out to your partners and start developing your projects
+--
+
++ Get ready to launch some part of it
+
+
+---
+
+# .center[Contact Information]
+## Richard Dunks
++ Email: richard[at]datapolitan[dot]com
++ Website: http://www.datapolitan.com
++ Twitter: [@datapolitan](https://twitter.com/datapolitan)
+
+---
+
+class:center, middle
+#THANK YOU!
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create(
+        // {
+        //   slideNumberFormat: ""}
+        );
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-55673554-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  </body>
+</html>
